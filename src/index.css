@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif, 'Segoe UI';
+    background-color: var(--black);
+}
+
+:root{
+    --black:rgb(0, 0, 0);
+    --grey:rgb(120, 122, 122);
+    --lightGrey:rgb(215, 219, 220);
+    --blueGrey:rgb(15, 20, 25);
+}
