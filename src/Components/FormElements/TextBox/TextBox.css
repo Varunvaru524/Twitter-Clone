@@ -2,12 +2,13 @@
 
 .textBox {
   height: 40px;
-  padding: 5px;
+  padding: 7px;
   border: 1px solid var(--secondaryBtnBorder);
   color: var(--white);
   width: 100%;
+  border-radius: 5px;
 }
 .textBox:focus {
-  outline: 3px solid var(--twitterBlue);
-  border: none;
+  outline: none;
+  border: 3px solid var(--twitterBlue) ;
 }

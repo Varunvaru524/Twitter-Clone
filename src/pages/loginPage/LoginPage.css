@@ -1,0 +1,30 @@
+@import url(../../index.css);
+
+.twitterLogo{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.loginPageContainer{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.loginPage{
+    margin: auto;
+    width: 350px;
+}
+h1{
+    margin-bottom: 50px;
+    text-align: center;
+}
+h3{
+    margin: 10px 0px;
+}
+input{
+    margin-bottom: 20px;
+}
+button{
+    margin-top: 20px;
+}

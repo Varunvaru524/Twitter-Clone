@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif, 'Segoe UI';
     background-color: var(--black);
+    /* background-color: rgba(0, 128, 0, 0.185); */
+    color: var(--white);
 }
 
 :root{

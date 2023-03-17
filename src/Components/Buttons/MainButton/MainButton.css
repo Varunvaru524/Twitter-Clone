@@ -7,7 +7,6 @@
     font-weight: bold;
     border-radius: 40px;
     border: none;
-    min-width: 300px; ;
     height: 35px;
     background-color: var(--white);
     color: var(--black);
@@ -27,7 +26,6 @@
     font-weight: bold;
     border-radius: 40px;
     border: none;
-    min-width: 300px; ;
     height: 35px;
     background-color: transparent;
     color: var(--white);
