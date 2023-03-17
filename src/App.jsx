@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Routes, Route } from 'react-router-dom'
-import LoginPage from './pages/Login'
-import SignupPage from './pages/Signup'
-import NotfoundPage from './pages/Notfound'
-import ExperimentalPage from './pages/Experimental'
+import LoginPage from './pages/loginPage/Login'
+import SignupPage from './pages/signupPage/Signup'
+import NotfoundPage from './pages/notfoundPage/Notfound'
+import ExperimentalPage from './Experimental'
 
 
 class App extends Component {

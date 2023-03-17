@@ -3,6 +3,7 @@
 
 /* Primary */
 .primaryButton{
+    width: 100%;
     font-weight: bold;
     border-radius: 40px;
     border: none;
@@ -22,6 +23,7 @@
 
 /* Secondary */
 .secondaryButton{
+    width: 100%;
     font-weight: bold;
     border-radius: 40px;
     border: none;

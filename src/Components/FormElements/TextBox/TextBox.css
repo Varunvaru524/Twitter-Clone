@@ -5,6 +5,7 @@
   padding: 5px;
   border: 1px solid var(--secondaryBtnBorder);
   color: var(--white);
+  width: 100%;
 }
 .textBox:focus {
   outline: 3px solid var(--twitterBlue);
