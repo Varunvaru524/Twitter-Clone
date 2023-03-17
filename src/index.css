@@ -7,6 +7,7 @@
 }
 
 :root{
+    --twitterBlue :rgb(29, 155, 240);
     --black:rgb(0, 0, 0);
     --white:rgb(239, 243, 244);
     --grey:rgb(120, 122, 122);

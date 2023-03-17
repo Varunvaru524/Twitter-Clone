@@ -1,0 +1,12 @@
+@import url(../../../index.css);
+
+.textBox {
+  height: 40px;
+  padding: 5px;
+  border: 1px solid var(--secondaryBtnBorder);
+  color: var(--white);
+}
+.textBox:focus {
+  outline: 3px solid var(--twitterBlue);
+  border: none;
+}
