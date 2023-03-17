@@ -1,0 +1,40 @@
+@import url(../../../index.css);
+
+
+/* Primary */
+.primaryButton{
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    min-width: 300px; ;
+    height: 35px;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1rem;
+}
+.primaryButton:disabled{
+    background-color: var(--grey);
+}
+.primaryButton:hover:not(disabled){
+    background-color: var(--primaryBtnHover);
+}
+
+
+/* Secondary */
+.secondaryButton{
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    min-width: 300px; ;
+    height: 35px;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--secondaryBtnBorder);
+}
+.secondaryButton:disabled{
+    color: var(--grey);
+    background-color: transparent;
+}
+.secondaryButton:hover:not([disabled]){
+    background-color: var(--secondaryBtnHover);
+}

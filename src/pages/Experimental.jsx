@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import PrimaryButton from '../Components/Buttons/PrimaryButton/PrimaryButton'
 
 class Experimental extends Component {
-    render() { 
-        return (<PrimaryButton inputText='Next'/>);
+    render() {
+        return (
+            <>
+            <div>Exp</div>
+            </>
+        );
     }
 }
- 
-export default Experimental;
+
+export default Experimental; 

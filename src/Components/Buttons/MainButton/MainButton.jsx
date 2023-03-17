@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './PrimaryButton.css'
+import './MainButton.css'
 
 class PrimaryButton extends Component {
     render() {

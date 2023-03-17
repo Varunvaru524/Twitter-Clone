@@ -8,7 +8,11 @@
 
 :root{
     --black:rgb(0, 0, 0);
+    --white:rgb(239, 243, 244);
     --grey:rgb(120, 122, 122);
-    --lightGrey:rgb(215, 219, 220);
-    --blueGrey:rgb(15, 20, 25);
+
+    /* buttons */
+    --primaryBtnHover:rgb(215, 219, 220);
+    --secondaryBtnBorder:rgb(83, 100, 113);
+    --secondaryBtnHover: rgb(24, 25, 25);
 }
