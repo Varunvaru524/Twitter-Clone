@@ -1,0 +1,9 @@
+@import url(../../../../index.css);
+
+.rightSidebarContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    max-width: 300px;
+    font-size: 1.2rem;
+  }

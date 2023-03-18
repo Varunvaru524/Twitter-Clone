@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import LeftSideBar from './pages/homePage/Components/LeftSideBar/LeftSideBar'
+import RightSideBar from './pages/homePage/Components/RightSideBar/RightSideBar'
 
 class Experimental extends Component {
     render() {
         return (
             <>
-            <LeftSideBar/>
+            <RightSideBar/>
             </>
         );
     }
