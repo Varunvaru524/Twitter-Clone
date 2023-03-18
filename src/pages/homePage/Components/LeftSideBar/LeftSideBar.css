@@ -10,27 +10,27 @@
   font-size: 1.2rem;
 }
 
-/* Bottom Container */
+/* Top Container */
 .leftSidebarContainerTop {
   display: flex;
   flex-direction: column;
 }
 .leftSidebarElementsContainer {
   margin: 10px 0px;
-  display: inline-block;
 }
 .leftSidebarElementsContainer span {
   padding: 0px 10px;
 }
 .leftSidebarElements {
   padding: 10px;
+  display: inline-block;
 }
 .leftSidebarElements:hover {
   font-size: 1.4rem;
   cursor: pointer;
 }
 
-/* Top Container */
+/* Bottom Container */
 .leftSidebarContainerBottom > img {
   margin: 0px 10px;
   width: 50px;
