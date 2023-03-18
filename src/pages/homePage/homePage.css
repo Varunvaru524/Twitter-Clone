@@ -1,0 +1,8 @@
+@import url(../../index.css);
+
+.homePage{
+    display: grid;
+    grid-template-columns: 22% 45% auto;
+    width: 80%;
+    margin: auto;
+}

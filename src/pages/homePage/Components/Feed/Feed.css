@@ -1,0 +1,8 @@
+@import url(../../../../index.css);
+
+.feedContainer{
+    border-width: 0px 2px 0px 2px;
+    border-style: solid;
+    border-color: var(--secondaryBtnBorder) ;
+    height: 100vh;
+}
