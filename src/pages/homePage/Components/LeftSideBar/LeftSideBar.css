@@ -1,0 +1,48 @@
+@import url(../../../../index.css);
+
+.leftSidebarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  margin: 15px;
+  max-width: 300px;
+  font-size: 1.2rem;
+}
+
+/* Bottom Container */
+.leftSidebarContainerTop {
+  display: flex;
+  flex-direction: column;
+}
+.leftSidebarElementsContainer {
+  margin: 10px 0px;
+  display: inline-block;
+}
+.leftSidebarElementsContainer span {
+  padding: 0px 10px;
+}
+.leftSidebarElements {
+  padding: 10px;
+}
+.leftSidebarElements:hover {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Top Container */
+.leftSidebarContainerBottom > img {
+  margin: 0px 10px;
+  width: 50px;
+  float: left;
+}
+.leftSidebarContainerBottom p {
+  font-weight: bold;
+}
+.leftSidebarContainerBottom span {
+  font-size: 1rem;
+  color: var(--grey);
+}
+.leftSidebarContainerBottom:hover {
+  cursor: pointer;
+}
