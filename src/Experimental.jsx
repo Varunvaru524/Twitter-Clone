@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import RightSideBar from './pages/homePage/Components/RightSideBar/RightSideBar'
+import TweetButton from './Components/Buttons/MainButton/MainButton'
 
 class Experimental extends Component {
     render() {
         return (
             <>
-            <RightSideBar/>
+            <TweetButton  inputText='Tweet' className="tweetButton"/>
+            <TweetButton  className="primaryButton"/>
+            <TweetButton  className="secondaryButton"/>
             </>
         );
     }

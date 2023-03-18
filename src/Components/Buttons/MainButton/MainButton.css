@@ -1,40 +1,57 @@
 @import url(../../../index.css);
 
-
 /* Primary */
-.primaryButton{
-    width: 100%;
-    font-weight: bold;
-    border-radius: 40px;
-    border: none;
-    height: 35px;
-    background-color: var(--white);
-    color: var(--black);
-    font-size: 1rem;
+.primaryButton {
+  width: 100%;
+  font-weight: bold;
+  border-radius: 40px;
+  border: none;
+  height: 35px;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 1rem;
+  cursor: pointer;
 }
-.primaryButton:disabled{
-    background-color: var(--grey);
+.primaryButton:disabled {
+  background-color: var(--grey);
 }
-.primaryButton:hover:not(disabled){
-    background-color: var(--primaryBtnHover);
+.primaryButton:hover:not(disabled) {
+  background-color: var(--primaryBtnHover);
 }
-
 
 /* Secondary */
-.secondaryButton{
-    width: 100%;
-    font-weight: bold;
-    border-radius: 40px;
-    border: none;
-    height: 35px;
-    background-color: transparent;
-    color: var(--white);
-    border: 1px solid var(--secondaryBtnBorder);
+.secondaryButton {
+  width: 100%;
+  font-weight: bold;
+  border-radius: 40px;
+  border: none;
+  height: 35px;
+  background-color: transparent;
+  color: var(--white);
+  border: 1px solid var(--secondaryBtnBorder);
+  font-size: 1rem;
+  cursor: pointer;
 }
-.secondaryButton:disabled{
-    color: var(--grey);
-    background-color: transparent;
+.secondaryButton:disabled {
+  color: var(--grey);
+  background-color: transparent;
 }
-.secondaryButton:hover:not([disabled]){
-    background-color: var(--secondaryBtnHover);
+.secondaryButton:hover:not([disabled]) {
+  background-color: var(--secondaryBtnHover);
+}
+
+/* Tweet */
+.tweetButton {
+  width: 100%;
+  font-weight: bold;
+  border-radius: 40px;
+  border: none;
+  height: 35px;
+  background-color: var(--twitterBlue);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.tweetButton:disabled {
+  background-color: var(--tweetBtnDisabled);
+  color: var(--black);
 }
