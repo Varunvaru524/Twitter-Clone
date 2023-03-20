@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Joi from 'joi-browser'
+import {httpLogin} from '../../modules/httpModule'
 import TextBox from '../../Components/FormElements/TextBox/TextBox'
 import MainButton from '../../Components/Buttons/MainButton/MainButton'
 import twitterLogo from '../../assets/Twitter-logo.svg.png'
@@ -41,12 +42,15 @@ class Login extends Component {
         this.setState({ userInfo: updatedUserInfo })
     }
 
-    handleSubmit(event) {
+    async handleSubmit(event) {
         event.preventDefault()
         if (this.handleValidation()) {
-            // Call Backend
             this.setState({errors:{}})
-            console.log('Loged in Successfully');
+            // Call Backend
+            const token = await httpLogin(this.state.userInfo)
+            if (token) {
+                localStorage.setItem('jwtToken',token.data)
+            }
         }
     }
 
