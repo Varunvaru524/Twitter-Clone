@@ -13,6 +13,7 @@
     --black:rgb(0, 0, 0);
     --white:rgb(239, 243, 244);
     --grey:rgb(120, 122, 122);
+    --errorRed:#f4212e;
 
     /* buttons */
     --primaryBtnHover:rgb(215, 219, 220);
