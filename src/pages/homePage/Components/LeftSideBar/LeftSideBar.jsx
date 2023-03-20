@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TweetButton from '../../../../Components/Buttons/MainButton/MainButton'
-import logo from '../../../../Assets/Twitter-logo.svg.png'
+import logo from '../../../../assets/Twitter-logo.svg.png'
 import './LeftSideBar.css'
 
 class LeftSideBar extends Component {

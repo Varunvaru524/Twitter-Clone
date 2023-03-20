@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Joi from 'joi-browser'
 import TextBox from '../../Components/FormElements/TextBox/TextBox'
 import MainButton from '../../Components/Buttons/MainButton/MainButton'
-import twitterLogo from '../../Assets/Twitter-logo.svg.png'
+import twitterLogo from '../../assets/Twitter-logo.svg.png'
 import './Signup.css'
 
 
