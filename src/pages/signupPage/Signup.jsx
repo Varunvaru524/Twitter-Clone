@@ -20,11 +20,11 @@ class Login extends Component {
     }
 
     schema = {
-        firstName: Joi.string().min(0).max(15).required(),
-        lastName: Joi.string().min(0).max(15).required(),
-        userName: Joi.string().min(0).max(15).required(),
-        email: Joi.string().email().required(),
-        password: Joi.string().min(4).max(20).required(),
+        firstName: Joi.string().min(0).max(15).label('First Name').required(),
+        lastName: Joi.string().min(0).max(15).label('Last Name').required(),
+        userName: Joi.string().min(0).max(15).label('User Name').required(),
+        email: Joi.string().email().label('Email').required(),
+        password: Joi.string().min(4).max(20).label('Password').required(),
         confirmPassword: Joi.ref('password')
     }
 
