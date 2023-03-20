@@ -14,8 +14,15 @@ class Login extends Component {
                     <div className="signupPageContainer">
                         <div className='signupPage'>
                             <h1>Join Twitter Today</h1>
+                            <h3>Name</h3>
+                            <div className='signupNameContainer'>
+                                <TextBox placeholder='Enter First Name' autoFocus />
+                                <TextBox placeholder='Enter Last Name' />
+                            </div>
+                            <h3>Username</h3>
+                            <TextBox placeholder='Enter Username' />
                             <h3>Email</h3>
-                            <TextBox placeholder='Enter Email' autoFocus />
+                            <TextBox placeholder='Enter Email' />
                             <h3>Password</h3>
                             <TextBox placeholder='Enter Password' />
                             <h3>Confirm Password</h3>
