@@ -4,6 +4,7 @@ import RightSidebar from './Components/RightSideBar/RightSideBar'
 import Feed from './Components/Feed/Feed'
 import NotLoggedin from './Components/NotLoggedin/NotLoggedin';
 import './homePage.css'
+import RouterHooks from '../../Components/HigherOrderComponents/RouterHooks'
 
 class HomePage extends Component {
     render() {
@@ -20,7 +21,7 @@ class HomePage extends Component {
                         <RightSidebar />
                     </div>
                 </main>
-                    {localStorage.getItem('jwtToken')?undefined:<NotLoggedin/>}
+                    {localStorage.getItem('jwtToken')?undefined:<RouterHooks Component={NotLoggedin}/>}
             </>
         );
     }
