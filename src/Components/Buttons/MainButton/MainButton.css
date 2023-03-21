@@ -48,6 +48,7 @@
   border: none;
   height: 35px;
   background-color: var(--twitterBlue);
+  color: var(--white);
   font-size: 1rem;
   cursor: pointer;
 }
