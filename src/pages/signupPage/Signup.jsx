@@ -61,6 +61,7 @@ class Login extends Component {
             const token = await httpSignup(this.state.userInfo)
             if (token) {
                 localStorage.setItem('jwtToken',token.data)
+                this.props.navigate('/')
             }
         }
     }
