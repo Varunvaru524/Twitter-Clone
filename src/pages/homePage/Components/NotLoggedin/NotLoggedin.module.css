@@ -1,0 +1,29 @@
+@import url(../../../../index.css);
+
+.notLoggedinContainer{
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto 33%;
+    
+    width: 100%;
+    margin: auto;
+    padding: 0% 10%;
+    background-color: var(--twitterBlue);
+}
+.notLoggedinButtonsContainer{
+    display: flex;
+}
+.notLoggedinButtonsContainer>button:first-child{
+    margin-right: 10px;
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textContainer>p:first-child{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

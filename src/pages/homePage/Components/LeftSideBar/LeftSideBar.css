@@ -26,6 +26,8 @@
   display: inline-block;
 }
 .leftSidebarElements:hover {
+  transition-property: font-size;
+  transition-duration: 200ms;
   font-size: 1.4rem;
   cursor: pointer;
 }
