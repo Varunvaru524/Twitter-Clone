@@ -20,7 +20,7 @@ class HomePage extends Component {
                         <RightSidebar />
                     </div>
                 </main>
-                    <NotLoggedin />
+                    {localStorage.getItem('jwtToken')?undefined:<NotLoggedin/>}
             </>
         );
     }
