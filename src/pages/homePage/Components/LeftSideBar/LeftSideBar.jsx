@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import jwtDecode from 'jwt-decode';
 import TweetButton from '../../../../Components/Buttons/MainButton/MainButton'
 import logo from '../../../../assets/Twitter-logo.svg.png'
 import './LeftSideBar.css'
 
 class LeftSideBar extends Component {
     render() {
+        const token = localStorage.getItem('jwtToken')
+        if (token) {
+            var { firstName, userName } = jwtDecode(token)
+        }
+
         return (
             <div className='leftSidebarContainer'>
                 <div className='leftSidebarContainerTop'>
@@ -50,14 +56,16 @@ class LeftSideBar extends Component {
                         </div>
                     </div>
                     <div className='leftSidebarElementsContainer'>
-                       <TweetButton className='tweetButton' inputText='Tweet'/>
+                        <TweetButton className='tweetButton' inputText='Tweet' />
                     </div>
                 </div>
-                <div className='leftSidebarContainerBottom'>
-                    <img src={logo} alt="Profile" />
-                    <p>Varun</p>
-                    <span>@varunvaru524</span>
-                </div>
+                {token && (
+                    <div className='leftSidebarContainerBottom'>
+                        <img src={logo} alt="Profile" />
+                        <p>{firstName}</p>
+                        <span>{'@' + userName}</span>
+                    </div>
+                )}
             </div>
         );
     }
