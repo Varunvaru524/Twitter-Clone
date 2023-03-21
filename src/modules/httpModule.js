@@ -1,8 +1,8 @@
 import axios from "axios";
 
 // Api Endpoints
-const signupApi = 'http://localhost:3900/api/signup'
-const loginApi = 'http://localhost:3900/api/login'
+const signupApi = process.env.REACT_APP_API_SIGNUP
+const loginApi = process.env.REACT_APP_API_LOGIN
 
 // Interseptor
 axios.interceptors.response.use(null,(error)=>{

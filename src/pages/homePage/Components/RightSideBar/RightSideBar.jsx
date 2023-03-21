@@ -6,7 +6,7 @@ class RightSideBar extends Component {
     render() { 
         return (
             <div className='rightSidebarContainer'>
-                <TextBox placeHolder='Search' />
+                <TextBox placeholder='Search' />
                 <div>Wjats Happening</div>
                 <div>Who to follow</div>
             </div>
