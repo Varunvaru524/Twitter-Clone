@@ -60,7 +60,7 @@ class Login extends Component {
             // Call Backend
             const token = await httpSignup(this.state.userInfo)
             if (token) {
-                localStorage.setItem('jwtToken',token.data)
+                localStorage.setItem('jwtToken',token)
                 this.props.navigate('/')
             }
         }
