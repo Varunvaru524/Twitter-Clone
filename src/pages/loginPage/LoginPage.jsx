@@ -46,12 +46,15 @@ class Login extends Component {
         event.preventDefault()
         if (this.handleValidation()) {
             this.setState({ errors: {} })
+            
             // Call Backend
             const token = await httpLogin(this.state.userInfo)
-            localStorage.setItem('jwtToken', token.data)
-            this.props.navigate('/')
+            if (token) {
+                localStorage.setItem('jwtToken', token.data)
+                this.props.navigate('/')
             }
         }
+    }
 
     render() {
         let { email, password } = this.state.userInfo
