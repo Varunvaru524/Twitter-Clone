@@ -62,7 +62,7 @@ class Login extends Component {
         return (
             <React.Fragment>
                 <form onSubmit={(e) => this.handleSubmit(e)}>
-                    <div className='twitterLogo'><img src={require('../../assets/Twitter-logo.svg.png')} alt="Twitter Logo" width='40px' /></div>
+                    <div className='twitterLogo'><img src={twitterLogo} alt="Twitter Logo" width='40px' /></div>
                     <div className="loginPageContainer">
                         <div className='loginPage'>
                             <h1>Login to Twitter</h1>
