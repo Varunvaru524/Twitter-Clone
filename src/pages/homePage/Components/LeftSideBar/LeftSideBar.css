@@ -33,18 +33,29 @@
 }
 
 /* Bottom Container */
-.leftSidebarContainerBottom > img {
+.leftSidebarContainerBottom{
+  display: flex;
+  justify-content: space-between;
+}
+.leftSidebarContainerBottom:hover {
+  cursor: pointer;
+}
+.logoutContainerLeft{
+  width: 80%;
+}
+.logoutContainerLeft > img {
   margin: 0px 10px;
   width: 50px;
   float: left;
 }
-.leftSidebarContainerBottom p {
+.logoutContainerLeft p {
   font-weight: bold;
 }
-.leftSidebarContainerBottom span {
+.logoutContainerLeft span {
   font-size: 1rem;
   color: var(--grey);
 }
-.leftSidebarContainerBottom:hover {
-  cursor: pointer;
+.logoutContainerRight>i{
+margin: 10px 15px 10px 10px;
+color: var(--twitterBlue);
 }

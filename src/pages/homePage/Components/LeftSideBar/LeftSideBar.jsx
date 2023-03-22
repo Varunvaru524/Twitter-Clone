@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import jwtDecode from 'jwt-decode';
+import { Popconfirm } from 'antd'
 import TweetButton from '../../../../Components/Buttons/MainButton/MainButton'
 import logo from '../../../../assets/Twitter-logo.png'
 import './LeftSideBar.css'
 
 class LeftSideBar extends Component {
+    handleLogout() {
+        localStorage.removeItem('jwtToken')
+        window.location.reload()
+    }
+
     render() {
         const token = localStorage.getItem('jwtToken')
         if (token) {
@@ -60,11 +66,18 @@ class LeftSideBar extends Component {
                     </div>
                 </div>
                 {token && (
-                    <div className='leftSidebarContainerBottom'>
-                        <img src={logo} alt="Profile" />
-                        <p>{firstName}</p>
-                        <span>{'@' + userName}</span>
-                    </div>
+                    <Popconfirm title="Logout" description="Are you sure you want to logout?" onConfirm={() => this.handleLogout()} placement="topRight" >
+                        <div className='leftSidebarContainerBottom'>
+                            <div className="logoutContainerLeft">
+                                <img src={logo} alt="Profile" />
+                                <p>{firstName}</p>
+                                <span>{'@' + userName}</span>
+                            </div>
+                            <div className="logoutContainerRight">
+                                <i className="fa-solid fa-power-off"></i>
+                            </div>
+                        </div>
+                    </Popconfirm>
                 )}
             </div>
         );
