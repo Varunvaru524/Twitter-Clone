@@ -1,4 +1,5 @@
 import axios from "axios";
+import {toast} from 'react-toastify'
 
 // Api Endpoints
 const signupApi = process.env.REACT_APP_API_SIGNUP
@@ -6,7 +7,7 @@ const loginApi = process.env.REACT_APP_API_LOGIN
 
 // Interseptor
 axios.interceptors.response.use(null,(error)=>{
-    console.log('Response Error',error);
+    toast.error(error.response.data)
 })
 
 // Http Requests
