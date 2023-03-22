@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Joi from 'joi-browser'
-import {httpLogin} from '../../modules/httpModule'
+import { httpLogin } from '../../modules/httpModule'
 import TextBox from '../../Components/FormElements/TextBox/TextBox'
 import MainButton from '../../Components/Buttons/MainButton/MainButton'
 import twitterLogo from '../../assets/Twitter-logo.png'
@@ -45,19 +45,16 @@ class Login extends Component {
     async handleSubmit(event) {
         event.preventDefault()
         if (this.handleValidation()) {
-            this.setState({errors:{}})
+            this.setState({ errors: {} })
             // Call Backend
             const token = await httpLogin(this.state.userInfo)
-            console.log(token);
-            // if (token) {
-            //     localStorage.setItem('jwtToken',token.data)
-            //     this.props.navigate('/')
-            // }
+            localStorage.setItem('jwtToken', token.data)
+            this.props.navigate('/')
+            }
         }
-    }
 
     render() {
-        let { email, password} = this.state.userInfo
+        let { email, password } = this.state.userInfo
         let { email: errorEmail, password: errorPassword } = this.state.errors
 
         return (
