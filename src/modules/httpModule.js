@@ -22,7 +22,7 @@ async function httpSignup(payload) {
     if (token === undefined) return
     else{
         try {
-            jwtDecode(token)
+            jwtDecode(token.data)
             return token.data
         } catch (error) {
             toast.error('Invalid Token')
@@ -35,7 +35,7 @@ async function httpLogin(payload) {
     if (token === undefined) return
     else{
         try {
-            jwtDecode(token)
+            jwtDecode(token.data)
             return token.data
         } catch (error) {
             toast.error('Invalid Token')
