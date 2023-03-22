@@ -3,7 +3,7 @@ import Joi from 'joi-browser'
 import {httpSignup} from '../../modules/httpModule'
 import TextBox from '../../Components/FormElements/TextBox/TextBox'
 import MainButton from '../../Components/Buttons/MainButton/MainButton'
-import twitterLogo from '../../assets/Twitter-logo.svg.png'
+import twitterLogo from '../../assets/Twitter-logo.png'
 import './Signup.css'
 
 

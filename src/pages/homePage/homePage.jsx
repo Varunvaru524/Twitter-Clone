@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import RouterHooks from '../../Components/HigherOrderComponents/RouterHooks'
 import LeftSidebar from './Components/LeftSideBar/LeftSideBar'
 import RightSidebar from './Components/RightSideBar/RightSideBar'
 import Feed from './Components/Feed/Feed'
 import NotLoggedin from './Components/NotLoggedin/NotLoggedin';
 import './homePage.css'
-import RouterHooks from '../../Components/HigherOrderComponents/RouterHooks'
 
 class HomePage extends Component {
     render() {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import jwtDecode from 'jwt-decode';
 import TweetButton from '../../../../Components/Buttons/MainButton/MainButton'
-import logo from '../../../../assets/Twitter-logo.svg.png'
+import logo from '../../../../assets/Twitter-logo.png'
 import './LeftSideBar.css'
 
 class LeftSideBar extends Component {
