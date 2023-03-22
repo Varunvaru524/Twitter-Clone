@@ -1,6 +1,6 @@
 import { useNavigate, useLocation, useParams, useSearchParams, } from "react-router-dom";
 
-const RouterHooks = ({ Component }) => {
+const RouterHooks = ({ Component, ...rest }) => {
     const navigate = useNavigate();
     const location = useLocation();
     const params = useParams();
@@ -13,6 +13,7 @@ const RouterHooks = ({ Component }) => {
             params={params}
             searchParams={searchParams}
             setSearchParams={setSearchParams}
+            {...rest}
         />
     );
 };
