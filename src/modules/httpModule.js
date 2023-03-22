@@ -1,4 +1,5 @@
 import axios from "axios";
+import jwtDecode from "jwt-decode";
 import {toast} from 'react-toastify'
 
 // Api Endpoints
@@ -19,8 +20,15 @@ axios.interceptors.response.use(null,(error)=>{
 async function httpSignup(payload) {
     return await axios.post(signupApi,payload)
 }
+
 async function httpLogin(payload) {
-    return await axios.post(loginApi,payload)
+    const token =  await axios.post(loginApi,payload)
+    try {
+        jwtDecode(token)
+        return token
+    } catch (error) {
+        toast.error('Invalid Token')
+    }
 }
 
 export {
