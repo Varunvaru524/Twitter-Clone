@@ -25,7 +25,7 @@ async function httpLogin(payload) {
     const token =  await axios.post(loginApi,payload)
     try {
         jwtDecode(token)
-        return token
+        return token.data
     } catch (error) {
         toast.error('Invalid Token')
     }

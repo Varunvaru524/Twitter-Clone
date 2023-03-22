@@ -50,7 +50,7 @@ class Login extends Component {
             // Call Backend
             const token = await httpLogin(this.state.userInfo)
             if (token) {
-                localStorage.setItem('jwtToken', token.data)
+                localStorage.setItem('jwtToken', token)
                 this.props.navigate('/')
             }
         }
