@@ -7,7 +7,12 @@ const loginApi = process.env.REACT_APP_API_LOGIN
 
 // Interseptor
 axios.interceptors.response.use(null,(error)=>{
-    toast.error(error.response.data)
+    if (error.response) {
+        toast.error(error.response.data)
+    }
+    else{
+        toast.error(error.message)
+    }
 })
 
 // Http Requests
