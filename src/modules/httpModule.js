@@ -19,21 +19,27 @@ axios.interceptors.response.use(null, (error) => {
 // Http Requests
 async function httpSignup(payload) {
     const token = await axios.post(signupApi, payload)
-    try {
-        jwtDecode(token)
-        return token.data
-    } catch (error) {
-        toast.error('Invalid Token')
+    if (token === undefined) return
+    else{
+        try {
+            jwtDecode(token)
+            return token.data
+        } catch (error) {
+            toast.error('Invalid Token')
+        }
     }
 }
 
 async function httpLogin(payload) {
     const token = await axios.post(loginApi, payload)
-    try {
-        jwtDecode(token)
-        return token.data
-    } catch (error) {
-        toast.error('Invalid Token')
+    if (token === undefined) return
+    else{
+        try {
+            jwtDecode(token)
+            return token.data
+        } catch (error) {
+            toast.error('Invalid Token')
+        }
     }
 }
 
