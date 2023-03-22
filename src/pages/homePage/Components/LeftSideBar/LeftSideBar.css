@@ -33,14 +33,14 @@
 }
 
 /* Bottom Container */
-.leftSidebarContainerBottom{
+.leftSidebarContainerBottom {
   display: flex;
   justify-content: space-between;
 }
 .leftSidebarContainerBottom:hover {
   cursor: pointer;
 }
-.logoutContainerLeft{
+.logoutContainerLeft {
   width: 80%;
 }
 .logoutContainerLeft > img {
@@ -55,7 +55,7 @@
   font-size: 1rem;
   color: var(--grey);
 }
-.logoutContainerRight>i{
-margin: 10px 15px 10px 10px;
-color: var(--twitterBlue);
+.logoutContainerRight > i {
+  margin: 10px 15px 10px 10px;
+  color: var(--twitterBlue);
 }
