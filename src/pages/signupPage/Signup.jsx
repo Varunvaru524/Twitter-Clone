@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Joi from 'joi-browser'
-import {httpSignup} from '../../modules/httpModule'
+import { toast } from 'react-toastify'
+import { httpSignup } from '../../modules/httpModule'
 import TextBox from '../../Components/FormElements/TextBox/TextBox'
 import MainButton from '../../Components/Buttons/MainButton/MainButton'
 import twitterLogo from '../../assets/Twitter-logo.png'
@@ -56,12 +57,13 @@ class Login extends Component {
     async handleSubmit(event) {
         event.preventDefault()
         if (this.handleValidation()) {
-            this.setState({errors:{}})
+            this.setState({ errors: {} })
             // Call Backend
             const token = await httpSignup(this.state.userInfo)
             if (token) {
-                localStorage.setItem('jwtToken',token)
+                localStorage.setItem('jwtToken', token)
                 this.props.navigate('/')
+                toast.success('Login Successful')
             }
         }
     }

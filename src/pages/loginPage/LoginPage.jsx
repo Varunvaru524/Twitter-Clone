@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Joi from 'joi-browser'
+import { toast } from 'react-toastify'
 import { httpLogin } from '../../modules/httpModule'
 import TextBox from '../../Components/FormElements/TextBox/TextBox'
 import MainButton from '../../Components/Buttons/MainButton/MainButton'
@@ -46,12 +47,13 @@ class Login extends Component {
         event.preventDefault()
         if (this.handleValidation()) {
             this.setState({ errors: {} })
-            
+
             // Call Backend
             const token = await httpLogin(this.state.userInfo)
             if (token) {
                 localStorage.setItem('jwtToken', token)
                 this.props.navigate('/')
+                toast.success('Login Successful')
             }
         }
     }
